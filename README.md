@@ -1,19 +1,28 @@
-# test-project
+# Test project
 
-## Project setup
-```
-npm install
-```
+## Быстрый старт
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Понадобится только Node.js 20 LTS. Глобально устанавливать Vue CLI, TypeScript,
+линтеры или другие инструменты не нужно.
 
-### Compiles and minifies for production
-```
-npm run build
+```bash
+npm ci
+npm run dev
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+После запуска приложение будет доступно по адресу, который появится в терминале
+(обычно `http://localhost:8080`).
+
+## Команды
+
+```bash
+npm run dev    # локальная разработка с hot reload
+npm run build  # production-сборка
+```
+
+ESLint и Prettier в проекте отключены, поэтому они не будут блокировать запуск
+или автоматически менять код во время live-coding. Необязательные пакеты этих
+инструментов, которые упоминает старый Vue CLI, также пропускаются при установке.
+
+Проверка TypeScript остаётся включённой: ошибки типов сразу останавливают
+перекомпиляцию в режиме разработки и production-сборку.
