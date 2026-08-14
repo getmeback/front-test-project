@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-main>
+      <!-- Основной экран тестового задания -->
       <TodoComponent />
     </v-main>
   </v-app>

@@ -21,10 +21,9 @@ import "@fontsource/roboto/700-italic.css";
 import "@fontsource/roboto/900-italic.css";
 
 import App from "./App.vue";
-import store from "./store";
 const vuetify = createVuetify({
   components,
   directives,
 });
 
-createApp(App).use(vuetify).use(store).mount("#app");
+createApp(App).use(vuetify).mount("#app");
